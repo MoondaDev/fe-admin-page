@@ -4,7 +4,6 @@ import {
   Route,
   Switch
 } from "react-router-dom";
-import LoginPage from "./pages/Login";
 
 export default function Routes() {
   return (
