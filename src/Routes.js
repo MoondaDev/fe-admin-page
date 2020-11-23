@@ -5,6 +5,7 @@ import {
   Switch
 } from "react-router-dom";
 import LoginPage from "./pages/Login/index";
+import CenterPage from "./pages/admin/Center/index";
 
 export default function Routes() {
   return (
@@ -12,6 +13,7 @@ export default function Routes() {
       <Switch>
         <Route exact path="/" />
         <Route path="/login" component={LoginPage} />
+        <Route path="/admin/center" component={CenterPage} />
       </Switch>
     </Router>
   );
