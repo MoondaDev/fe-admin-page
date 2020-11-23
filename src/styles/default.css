@@ -1,0 +1,16 @@
+:root {
+  /* Adjust `rem` attribute */
+  font-size: 16px;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  vertical-align: bottom;
+}
