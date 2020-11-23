@@ -1,4 +1,5 @@
 @import "./header.css";
+@import "./sidebar.css";
 
 :root {
   /* Adjust `rem` attribute */
