@@ -1,6 +1,10 @@
 
 export default function CenterPage() {
   return (
-    <div></div>
+    <>
+      <header className="header"></header>
+      <aside className="sidebar"></aside>
+      <section></section>
+    </>
   );
 }
