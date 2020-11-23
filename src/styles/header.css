@@ -1,0 +1,40 @@
+@import "./colors.css";
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3.2rem;
+  background-color: var(--header-background);
+  color: var(--header-color);
+}
+
+.header > .left {
+  float: left;
+}
+
+.header > .right {
+  float: right;
+}
+
+.header > .item {
+  display: inline-block;
+  height: 2rem;
+  margin: .6rem 1.6rem 0rem 1.6rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+}
+
+.header > .item.divider {
+  width: 1px;
+  height: 2rem;
+  margin: .6rem 0rem;
+  line-height: 2rem;
+  background-color: var(--header-color);
+}
+
+.header > .item.title {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}

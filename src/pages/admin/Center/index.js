@@ -1,9 +1,10 @@
+import Header from "../../../components/common/Header";
 
 export default function CenterPage() {
   return (
     <>
-      <header className="header"></header>
       <aside className="sidebar"></aside>
+      <Header />
       <section></section>
     </>
   );
