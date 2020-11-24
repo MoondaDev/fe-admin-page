@@ -26,5 +26,5 @@ a.muted:hover {
   opacity: .8;
 }
 
-@import "./header.css";
-@import "./sidebar.css";
+@import "./components/header.css";
+@import "./components/sidebar.css";
