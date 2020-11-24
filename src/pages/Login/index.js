@@ -4,11 +4,7 @@ class LoginPage extends React.Component {
   render() {
     return (
       <div className="center">
-        <img
-          className="logo"
-          alt="Moonda logo with title"
-          src="logo-with-title.png"
-        />
+        <img className="logo" src="logo-with-title.png" alt="Moonda logo with title" />
         <form>
           <div className="login-box">
             <div className="login-input-container">
@@ -21,12 +17,7 @@ class LoginPage extends React.Component {
                 placeholder="Enter your password"
               />
             </div>
-            <button
-              className="login-button"
-              type="submit"
-            >
-              Log in
-            </button>
+            <button className="login-button" type="submit">Log in</button>
           </div>
         </form>
       </div>
