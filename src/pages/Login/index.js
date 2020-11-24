@@ -5,7 +5,7 @@ class LoginPage extends React.Component {
     return (
       <div className="center">
         <img className="logo" src="logo-with-title.png" alt="Moonda logo with title" />
-        <form>
+        <form action="/admin">
           <div className="login-box">
             <div className="login-input-container">
               <InputSection label="ID"
