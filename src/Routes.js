@@ -7,14 +7,16 @@ import {
 import LoginPage from "./pages/Login/index";
 import CenterPage from "./pages/admin/Center/index";
 
-export default function Routes() {
-  return (
-    <Router>
-      <Switch>
-        <Route exact path="/" />
-        <Route path="/login" component={LoginPage} />
-        <Route path="/admin/center" component={CenterPage} />
-      </Switch>
-    </Router>
-  );
+export default class Routes extends React.Component {
+  render() {
+    return (
+      <Router>
+        <Switch>
+          <Route exact path="/" />
+          <Route path="/login" component={LoginPage} />
+          <Route path="/admin/center" component={CenterPage} />
+        </Switch>
+      </Router>
+    );
+  }
 }
