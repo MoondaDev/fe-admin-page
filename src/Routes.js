@@ -2,6 +2,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
+  Redirect,
   Switch
 } from "react-router-dom";
 import LoginPage from "./pages/Login/index";
@@ -14,6 +15,7 @@ export default class Routes extends React.Component {
         <Switch>
           <Route path="/login" component={LoginPage} />
           <Route path="/admin" component={AdminPage} />
+          <Redirect from="*" to="/login" />
         </Switch>
       </Router>
     );

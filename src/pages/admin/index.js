@@ -2,6 +2,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Route,
+  Redirect,
   Switch
 } from "react-router-dom";
 import Header from "../../components/common/Header";
@@ -20,6 +21,7 @@ class AdminPage extends React.Component {
             <Route path="/admin/course" component={EmptyPage} />
             <Route path="/admin/gallery" component={EmptyPage} />
             <Route path="/admin" component={EmptyPage} />
+            <Redirect from="*" to="/admin" />
           </Switch>
         </section>
       </Router>
