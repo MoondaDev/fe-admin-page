@@ -25,7 +25,7 @@ class Sidebar extends React.Component {
 
   render() {
     return (
-      <aside className="sidebar">
+      <aside className="layout">
         <nav>
           <ul className="nav-list">
             {this.getSidebarItems().map(item =>
