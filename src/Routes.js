@@ -5,17 +5,25 @@ import {
   Redirect,
   Switch
 } from "react-router-dom";
-import LoginPage from "./pages/Login/index";
-import AdminPage from "./pages/admin/index";
+import pLogin from "./pages/login";
+import pCenter from "./pages/admin/center";
+import p404 from "./pages/404";
 
 export default class Routes extends React.Component {
   render() {
     return (
       <Router>
         <Switch>
-          <Route path="/login" component={LoginPage} />
-          <Route path="/admin" component={AdminPage} />
+          {/* Pages */}
+          <Route path="/login" component={pLogin} />
+          <Route path="/admin/center" component={pCenter} />
+          <Route path="/admin/course" component={p404} />
+          <Route path="/admin/gallery" component={p404} />
+
+          {/* Redirects */}
+          <Redirect from="/admin" to="/admin/center" />
           <Redirect from="*" to="/login" />
+
         </Switch>
       </Router>
     );
