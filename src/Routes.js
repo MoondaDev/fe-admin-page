@@ -6,7 +6,6 @@ import {
   Switch
 } from "react-router-dom";
 import pLogin from "./pages/login";
-import pCenter from "./pages/admin/center";
 import p404 from "./pages/404";
 
 export default class Routes extends React.Component {
@@ -16,7 +15,7 @@ export default class Routes extends React.Component {
         <Switch>
           {/* Pages */}
           <Route path="/login" component={pLogin} />
-          <Route path="/admin/center" component={pCenter} />
+          <Route path="/admin/center" component={p404} />
           <Route path="/admin/course" component={p404} />
           <Route path="/admin/gallery" component={p404} />
 
