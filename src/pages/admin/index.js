@@ -5,8 +5,8 @@ import {
   Redirect,
   Switch
 } from "react-router-dom";
-import Header from "../../components/common/Header";
-import Sidebar from "../../components/common/Sidebar";
+import Header from "../../layout/Header";
+import Sidebar from "../../layout/Sidebar";
 import CenterPage from "./Center/index";
 
 class AdminPage extends React.Component {
