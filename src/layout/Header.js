@@ -7,7 +7,7 @@ class Header extends React.Component {
     };
 
     return (
-      <header className="header">
+      <header className="layout">
         <span className="item left title">Moonda admin page</span>
 
         <span className="item right">
