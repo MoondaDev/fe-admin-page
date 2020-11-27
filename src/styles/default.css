@@ -1,6 +1,7 @@
 :root {
   /* Adjust `rem` attribute */
   font-size: 16px;
+  font-family: FontAwesome, Roboto;
 }
 
 html, body, #root {
@@ -16,10 +17,9 @@ html, body, #root {
 }
 
 a.muted {
-  margin: -.5rem;
-  padding: .5rem;
   color: inherit;
   text-decoration: inherit;
+  cursor: pointer;
 }
 
 a.muted:hover {
@@ -27,5 +27,9 @@ a.muted:hover {
 }
 
 @import "./pages/login.css";
-@import "./components/header.css";
+
+@import "./layout/header.css";
 @import "./layout/sidebar.css";
+@import "./layout/main.css";
+
+@import "./components/title.css";
