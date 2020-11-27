@@ -1,6 +1,6 @@
 @import "../colors.css";
 
-.header {
+header.layout {
   position: absolute;
   top: 0;
   left: 0;
@@ -10,15 +10,15 @@
   color: var(--header-color);
 }
 
-.header > .left {
+header.layout > .left {
   float: left;
 }
 
-.header > .right {
+header.layout > .right {
   float: right;
 }
 
-.header > .item {
+header.layout > .item {
   display: inline-block;
   height: 2rem;
   margin: .6rem 1.6rem 0rem 1.6rem;
@@ -26,7 +26,7 @@
   line-height: 1.6rem;
 }
 
-.header > .item.divider {
+header.layout > .item.divider {
   width: 1px;
   height: 2rem;
   margin: .6rem 0rem;
@@ -34,7 +34,7 @@
   background-color: var(--header-color);
 }
 
-.header > .item.title {
+header.layout > .item.title {
   font-size: 1.4rem;
   line-height: 1.6rem;
 }
