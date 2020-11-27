@@ -1,5 +1,5 @@
 import React from "react";
-import classNames from "classnames";
+import classNames from "../scripts/util/classNames";
 
 class Sidebar extends React.Component {
   render() {
