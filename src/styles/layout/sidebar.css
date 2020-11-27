@@ -34,6 +34,9 @@ aside.layout .nav-list > .nav-item .icon {
   display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
 }
 
 aside.layout .nav-list > .nav-item .title {
