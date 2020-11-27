@@ -34,10 +34,9 @@ aside.layout .nav-list > .nav-item .icon {
   display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
-  background-color: rgba(255, 255, 255, .5); /* TODO: 나중에 적절한 아이콘으로 대체 
-  * 추후 수정 필수!!
-  * 본래 계획중이던 것은 background-image를 이용하여 아이콘을 첨부하는 것이다.
-  */
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  text-align: center;
 }
 
 aside.layout .nav-list > .nav-item .title {

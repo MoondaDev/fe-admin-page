@@ -8,15 +8,15 @@ class Sidebar extends React.Component {
         <nav>
           <ul className="nav-list">
             <Item title="문화센터 정보"
-              icon="ic1"
+              icon="fas fa-university"
               url="/admin/center"
             />
             <Item title="강좌 정보"
-              icon="ic2"
+              icon="fas fa-inbox"
               url="/admin/course"
             />
             <Item title="강좌 이미지"
-              icon="ic3"
+              icon="fas fa-photo-video"
               url="/admin/gallery"
             />
           </ul>
@@ -28,6 +28,7 @@ class Sidebar extends React.Component {
 
 class Item extends React.Component {
   render() {
+    // icon로는 font-awesome 에서 사용하는 클래스 문자열을 전달
     const { icon, title, url } = this.props;
 
     return (
@@ -36,7 +37,7 @@ class Item extends React.Component {
         'active': window.location.pathname.startsWith(url)
       })}>
         <a className="muted" href={url}>
-          <i className="icon">{icon}</i>
+          <i className={classNames(icon, 'icon')}></i>
           <span className="title">{title}</span>
         </a>
       </li>
