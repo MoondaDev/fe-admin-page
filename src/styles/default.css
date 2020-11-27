@@ -28,4 +28,4 @@ a.muted:hover {
 
 @import "./pages/login.css";
 @import "./components/header.css";
-@import "./components/sidebar.css";
+@import "./layout/sidebar.css";

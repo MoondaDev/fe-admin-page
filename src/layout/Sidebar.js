@@ -1,40 +1,24 @@
 import React from "react";
-import classNames from "../../scripts/util/classNames";
+import classNames from "../scripts/util/classNames";
 
 class Sidebar extends React.Component {
-  getSidebarItems() {
-    // TODO: 아이콘 삽입하기
-    return [
-      {
-        title: '문화센터 정보',
-        icon: 'ic1',
-        url: '/admin/center'
-      },
-      {
-        title: '강좌 정보',
-        icon: 'ic2',
-        url: '/admin/course'
-      },
-      {
-        title: '강좌 이미지',
-        icon: 'ic3',
-        url: '/admin/gallery'
-      }
-    ];
-  }
-
   render() {
     return (
-      <aside className="sidebar">
+      <aside className="layout">
         <nav>
           <ul className="nav-list">
-            {this.getSidebarItems().map(item =>
-              <Item
-                title={item.title}
-                icon={item.icon}
-                url={item.url}
-              />
-            )}
+            <Item title="문화센터 정보"
+              icon="ic1"
+              url="/admin/center"
+            />
+            <Item title="강좌 정보"
+              icon="ic2"
+              url="/admin/course"
+            />
+            <Item title="강좌 이미지"
+              icon="ic3"
+              url="/admin/gallery"
+            />
           </ul>
         </nav>
       </aside>
