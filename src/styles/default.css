@@ -1,6 +1,7 @@
 :root {
   /* Adjust `rem` attribute */
   font-size: 16px;
+  font-family: FontAwesome, Roboto;
 }
 
 html, body, #root {
