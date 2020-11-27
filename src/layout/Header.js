@@ -18,7 +18,9 @@ class Header extends React.Component {
       <header className="layout">
         <span className="item left title">Moonda admin page</span>
 
-        <span className="item right" onClick={this.onLogout}>로그아웃</span>
+        <span className="item right" onClick={this.onLogout}>
+          <a className="muted">로그아웃</a>
+        </span>
         <span className="item right divider"></span>
         <span className="item right">{this.getUserEmail()}</span>
       </header>
