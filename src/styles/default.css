@@ -27,5 +27,5 @@ a.muted:hover {
 }
 
 @import "./pages/login.css";
-@import "./components/header.css";
+@import "./layout/header.css";
 @import "./layout/sidebar.css";
