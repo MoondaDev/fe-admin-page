@@ -30,3 +30,4 @@ a.muted:hover {
 @import "./pages/login.css";
 @import "./layout/header.css";
 @import "./layout/sidebar.css";
+@import "./layout/main.css";
