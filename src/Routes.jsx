@@ -6,6 +6,7 @@ import {
   Switch
 } from "react-router-dom";
 import LoginPage from "./pages/login";
+import LectureListPage from "./pages/admin/LectureList";
 import NoPage from "./pages/404";
 
 export default class Routes extends React.Component {
@@ -17,7 +18,7 @@ export default class Routes extends React.Component {
           <Route path="/login" component={LoginPage} />
           <Route path="/admin/center/list" component={NoPage} />
           <Route path="/admin/center/new" component={NoPage} />
-          <Route path="/admin/lecture/list" component={NoPage} />
+          <Route path="/admin/lecture/list" component={LectureListPage} />
           <Route path="/admin/lecture/new" component={NoPage} />
           <Route path="/admin/images" component={NoPage} />
 
