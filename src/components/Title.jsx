@@ -1,4 +1,11 @@
 import React from "react";
+import styled from "styled-components";
+
+const Heading = styled.h1`
+  margin-top: 2rem;
+  margin-left: 1rem;
+  font-size: 1.6rem;
+`;
 
 class Title extends React.Component {
   componentDidMount() {
@@ -8,7 +15,7 @@ class Title extends React.Component {
 
   render() {
     return (
-      <h1 className="component title">{this.props.children}</h1>
+      <Heading>{this.props.children}</Heading>
     );
   }
 }
