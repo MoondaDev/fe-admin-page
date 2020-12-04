@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
   Redirect,
   Switch
@@ -12,7 +12,7 @@ import NoPage from "./pages/404";
 export default class Routes extends React.Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter basename="/fe-admin-page">
         <Switch>
           {/* Pages */}
           <Route path="/login" component={LoginPage} />
@@ -29,7 +29,7 @@ export default class Routes extends React.Component {
           <Redirect from="*" to="/login" />
 
         </Switch>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
