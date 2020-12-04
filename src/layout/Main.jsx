@@ -5,8 +5,10 @@ class Main extends React.Component {
     const { children } = this.props;
 
     return (
-      <main>
-        {children}
+      <main className="layout">
+        <div className="main-wrapper">
+          {children}
+        </div>
       </main>
     );
   }
