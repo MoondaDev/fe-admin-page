@@ -1,4 +1,60 @@
 import React from "react";
+import styled, { css } from "styled-components";
+
+const BACKGROUND_COLOR = css`rgb(34, 42, 53)`;
+const COLOR = css`rgb(255, 255, 255)`;
+const HEIGHT = css`3.2rem`;
+
+const Layout = styled.header`
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: ${HEIGHT};
+  background-color: ${BACKGROUND_COLOR};
+  color: ${COLOR};
+`;
+
+const LeftItem = styled.span`
+  display: inline-block;
+  height: 2rem;
+  margin: .6rem 1.6rem 0rem 1.6rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  float: left;
+`;
+
+const RightItem = styled.span`
+  display: inline-block;
+  height: 2rem;
+  margin: .6rem 1.6rem 0rem 1.6rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  float: right;
+
+  ${props => props.onClick && css`
+    cursor: pointer;
+    opacity: 1;
+
+    transition: opacity .1s ease;
+    -webkit-transition: opacity .1s ease;
+    
+    &:hover {
+      opacity: .75;
+    }
+  `}
+`;
+
+const RightItemDivider = styled.span`
+  display: inline-block;
+  width: 1px;
+  height: 2rem;
+  margin: .6rem 0rem;
+  line-height: 2rem;
+  background-color: ${COLOR};
+  float: right;
+`;
 
 class Header extends React.Component {
   getUserEmail() {
@@ -15,17 +71,23 @@ class Header extends React.Component {
 
   render() {
     return (
-      <header className="layout">
-        <span className="item left title">Moonda admin page</span>
+      <Layout>
+        {/* Left Items */}
+        <LeftItem>Moonda admin page</LeftItem>
 
-        <span className="item right" onClick={this.onLogout}>
-          <a className="muted">로그아웃</a>
-        </span>
-        <span className="item right divider"></span>
-        <span className="item right">{this.getUserEmail()}</span>
-      </header>
+        {/* Right Items (reversed order) */}
+        <RightItem onClick={this.onLogout}>로그아웃</RightItem>
+        <RightItemDivider/>
+        <RightItem>{this.getUserEmail()}</RightItem>
+
+      </Layout>
     );
   }
 }
 
-export default Header;
+export {
+  Header as default,
+  BACKGROUND_COLOR as HEADER_BACKGROUND_COLOR,
+  COLOR as HEADER_COLOR,
+  HEIGHT as HEADER_HEIGHT
+};

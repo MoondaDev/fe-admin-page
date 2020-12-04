@@ -15,11 +15,15 @@ export default class Routes extends React.Component {
         <Switch>
           {/* Pages */}
           <Route path="/login" component={pLogin} />
-          <Route path="/admin/center" component={p404} />
-          <Route path="/admin/course" component={p404} />
-          <Route path="/admin/gallery" component={p404} />
+          <Route path="/admin/center/list" component={p404} />
+          <Route path="/admin/center/new" component={p404} />
+          <Route path="/admin/lecture/list" component={p404} />
+          <Route path="/admin/lecture/new" component={p404} />
+          <Route path="/admin/images" component={p404} />
 
           {/* Redirects */}
+          <Redirect from="/admin/center*" to="/admin/center/list" />
+          <Redirect from="/admin/lecture*" to="/admin/lecture/list" />
           <Redirect from="/admin" to="/admin/center" />
           <Redirect from="*" to="/login" />
 
