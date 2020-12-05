@@ -82,9 +82,21 @@ const LoginButton = styled.button`
 `;
 
 class LoginPage extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {value: ''};
+
+    this.handleChange = this.handleChange.bind(this);
+  }
+
+  handleChange(evt) {
+    this.setState({value: evt.target.value});
+  }
+
   handleSubmit(evt) {
     alert('TODO: 로그인 API 사용하기');
     window.location.href = window.location.origin + BASENAME + '/admin';
+    evt.preventDefault();
   }
 
   render() {
@@ -96,14 +108,22 @@ class LoginPage extends React.Component {
             <VerticalBox>
               <LoginItem>
                 <LoginItemLabel>ID</LoginItemLabel>
-                <LoginItemInput type="text" placeholder="Enter your ID" />
+                <LoginItemInput
+                  type="text"
+                  placeholder="Enter your ID"
+                  onChange={this.handleChange}
+                />
               </LoginItem>
               <LoginItem>
                 <LoginItemLabel>Password</LoginItemLabel>
-                <LoginItemInput type="password" placeholder="Enter your password" />
+                <LoginItemInput
+                  type="password"
+                  placeholder="Enter your password"
+                  onChange={this.handleChange}
+                />
               </LoginItem>
             </VerticalBox>
-            <LoginButton type="submit" onClick={this.onLogin}>Log in</LoginButton>
+            <LoginButton type="submit">Log in</LoginButton>
           </HorizontalBox>
         </form>
       </Center>
