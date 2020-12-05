@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { BASENAME } from "../Routes";
 
 const BACKGROUND_COLOR = css`rgb(34, 42, 53)`;
 const COLOR = css`rgb(255, 255, 255)`;
@@ -65,7 +66,7 @@ class Header extends React.Component {
   onLogout() {
     // TODO: <use login API> to send logout request
     if (window.confirm('로그아웃 하시겠습니까?')) {
-      window.location.href = '/login';
+      window.location.href = window.location.origin + BASENAME + '/login';
     }
   }
 

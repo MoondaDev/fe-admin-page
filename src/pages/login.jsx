@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { BASENAME } from "../Routes";
 
 const Center = styled.div`
   display: flex;
@@ -83,6 +84,7 @@ const LoginButton = styled.button`
 class LoginPage extends React.Component {
   handleSubmit(evt) {
     alert('TODO: 로그인 API 사용하기');
+    window.location.href = window.location.origin + BASENAME + '/admin';
   }
 
   render() {
