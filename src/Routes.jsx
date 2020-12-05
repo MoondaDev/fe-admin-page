@@ -10,9 +10,11 @@ import LectureListPage from "./pages/admin/LectureList";
 import NoPage from "./pages/404";
 
 export default class Routes extends React.Component {
+const BASENAME = '/fe-admin-page';
+
   render() {
     return (
-      <BrowserRouter basename="/fe-admin-page">
+      <BrowserRouter basename={BASENAME}>
         <Switch>
           {/* Pages */}
           <Route path="/login" component={LoginPage} />
