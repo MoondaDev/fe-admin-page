@@ -85,6 +85,7 @@ class LoginPage extends React.Component {
   handleSubmit(evt) {
     alert('TODO: 로그인 API 사용하기');
     window.location.href = window.location.origin + BASENAME + '/admin';
+    evt.preventDefault();
   }
 
   render() {
