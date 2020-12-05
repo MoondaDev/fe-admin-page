@@ -104,7 +104,7 @@ class LoginPage extends React.Component {
                 <LoginItemInput type="password" placeholder="Enter your password" />
               </LoginItem>
             </VerticalBox>
-            <LoginButton type="submit" onClick={this.onLogin}>Log in</LoginButton>
+            <LoginButton type="submit">Log in</LoginButton>
           </HorizontalBox>
         </form>
       </Center>
