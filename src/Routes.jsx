@@ -1,6 +1,6 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
   Redirect,
   Switch
@@ -9,10 +9,12 @@ import LoginPage from "./pages/login";
 import LectureListPage from "./pages/admin/LectureList";
 import NoPage from "./pages/404";
 
-export default class Routes extends React.Component {
+const BASENAME = '/fe-admin-page';
+
+class Routes extends React.Component {
   render() {
     return (
-      <Router>
+      <BrowserRouter basename={BASENAME}>
         <Switch>
           {/* Pages */}
           <Route path="/login" component={LoginPage} />
@@ -29,7 +31,12 @@ export default class Routes extends React.Component {
           <Redirect from="*" to="/login" />
 
         </Switch>
-      </Router>
+      </BrowserRouter>
     );
   }
 }
+
+export {
+  Routes as default,
+  BASENAME
+};
