@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/fe-admin-page/static/css/main.285fd02f.chunk.css",
+    "main.js": "/fe-admin-page/static/js/main.14d98a8b.chunk.js",
+    "main.js.map": "/fe-admin-page/static/js/main.14d98a8b.chunk.js.map",
+    "runtime-main.js": "/fe-admin-page/static/js/runtime-main.201adb21.js",
+    "runtime-main.js.map": "/fe-admin-page/static/js/runtime-main.201adb21.js.map",
+    "static/js/2.9e2c6d94.chunk.js": "/fe-admin-page/static/js/2.9e2c6d94.chunk.js",
+    "static/js/2.9e2c6d94.chunk.js.map": "/fe-admin-page/static/js/2.9e2c6d94.chunk.js.map",
+    "static/js/3.e3c54a95.chunk.js": "/fe-admin-page/static/js/3.e3c54a95.chunk.js",
+    "static/js/3.e3c54a95.chunk.js.map": "/fe-admin-page/static/js/3.e3c54a95.chunk.js.map",
+    "index.html": "/fe-admin-page/index.html",
+    "static/css/main.285fd02f.chunk.css.map": "/fe-admin-page/static/css/main.285fd02f.chunk.css.map",
+    "static/js/2.9e2c6d94.chunk.js.LICENSE.txt": "/fe-admin-page/static/js/2.9e2c6d94.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.201adb21.js",
+    "static/js/2.9e2c6d94.chunk.js",
+    "static/css/main.285fd02f.chunk.css",
+    "static/js/main.14d98a8b.chunk.js"
+  ]
+}
