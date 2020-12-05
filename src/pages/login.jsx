@@ -81,15 +81,15 @@ const LoginButton = styled.button`
 `;
 
 class LoginPage extends React.Component {
-  onLogin() {
-    alert("TODO: 로그인 API 적용하기");
+  handleSubmit(evt) {
+    alert('TODO: 로그인 API 사용하기');
   }
 
   render() {
     return (
       <Center>
         <Logo src="logo-with-title.png" alt="Moonda logo with title" />
-        <form action="/admin">
+        <form onSubmit={this.handleSubmit}>
           <HorizontalBox>
             <VerticalBox>
               <LoginItem>
