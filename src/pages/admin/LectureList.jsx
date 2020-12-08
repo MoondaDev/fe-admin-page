@@ -20,6 +20,8 @@ class Page extends React.Component {
             <Title>강좌 정보</Title>
           </RowComponentGroup>
 
+          <RowComponentGroup/>
+
           <RowComponentGroup>
             <LeftComponentGroup>
               <SearchBar>문화센터 검색</SearchBar>
