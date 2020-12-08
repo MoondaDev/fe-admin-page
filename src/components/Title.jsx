@@ -2,7 +2,8 @@ import React from "react";
 import styled from "styled-components";
 
 const Heading = styled.h1`
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
   font-size: 1.6rem;
 `;
 
