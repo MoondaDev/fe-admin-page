@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const defaultStyle = css`
+const defaultButtonStyle = css`
   padding: .3rem 2rem;
   border: 1px solid #d7d7d7;
   background-color: #efefef;
@@ -8,17 +8,17 @@ const defaultStyle = css`
 `;
 
 const GreenButton = styled.button`
-  ${defaultStyle}
+  ${defaultButtonStyle}
   color: #00C853;
 `;
 
 const BlueButton = styled.button`
-  ${defaultStyle}
+  ${defaultButtonStyle}
   color: #00B0FF;
 `;
 
 const GrayButton = styled.button`
-  ${defaultStyle}
+  ${defaultButtonStyle}
   color: #727272;
 `;
 
