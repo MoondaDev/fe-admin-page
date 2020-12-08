@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import LoginPage from "./pages/login";
 import LectureListPage from "./pages/admin/LectureList";
+import LectureNewPage from "./pages/admin/LectureNew";
 import NoPage from "./pages/404";
 
 const BASENAME = '/fe-admin-page';
@@ -21,7 +22,7 @@ class Routes extends React.Component {
           <Route path="/admin/center/list" component={NoPage} />
           <Route path="/admin/center/new" component={NoPage} />
           <Route path="/admin/lecture/list" component={LectureListPage} />
-          <Route path="/admin/lecture/new" component={NoPage} />
+          <Route path="/admin/lecture/new" component={LectureNewPage} />
           <Route path="/admin/images" component={NoPage} />
 
           {/* Redirects */}
