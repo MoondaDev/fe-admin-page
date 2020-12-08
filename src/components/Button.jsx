@@ -31,6 +31,11 @@ const GrayButton = styled.button`
   color: #9E9E9E;
 `;
 
+const RedButton = styled.button`
+  ${defaultButtonStyle}
+  color: #F44336;
+`;
+
 const GrayInlineButton = styled.button`
   ${inlineButtonStyle}
   color: #9E9E9E;
@@ -42,6 +47,7 @@ export {
   GrayButton,
   BlueButton,
   GreenButton,
+  RedButton,
 
   GrayInlineButton,
 };
