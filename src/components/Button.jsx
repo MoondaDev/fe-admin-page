@@ -8,6 +8,14 @@ const defaultButtonStyle = css`
   cursor: pointer;
 `;
 
+const inlineButtonStyle = css`
+  padding: .2rem 1rem;
+  border: 1px solid #d7d7d7;
+  background-color: #efefef;
+  font-size: .6rem;
+  cursor: pointer;
+`;
+
 const GreenButton = styled.button`
   ${defaultButtonStyle}
   color: #00C853;
@@ -23,10 +31,17 @@ const GrayButton = styled.button`
   color: #9E9E9E;
 `;
 
+const GrayInlineButton = styled.button`
+  ${inlineButtonStyle}
+  color: #9E9E9E;
+`;
+
 export {
   GrayButton as default,
 
   GrayButton,
   BlueButton,
   GreenButton,
+
+  GrayInlineButton,
 };
