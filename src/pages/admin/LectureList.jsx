@@ -7,6 +7,7 @@ import Main, { RowComponentGroup, LeftComponentGroup, RightComponentGroup } from
 import Title from "../../components/Title";
 import SearchBar from "../../components/SearchBar";
 import Table from "../../components/Table";
+import { GreenButton } from "../../components/Button";
 
 class Page extends React.Component {
   render() {
@@ -24,6 +25,7 @@ class Page extends React.Component {
               <SearchBar>문화센터 검색</SearchBar>
             </LeftComponentGroup>
             <RightComponentGroup>
+              <GreenButton>추가</GreenButton>
             </RightComponentGroup>
           </RowComponentGroup>
 

@@ -10,6 +10,13 @@ const defaultButtonStyle = css`
   font-size: .8rem;
   text-align: center;
   cursor: pointer;
+  
+  transition: background-color .1s ease;
+  -webkit-transition: background-color .1s ease;
+
+  &:hover {
+    background-color: #d7d7d7;
+  }
 
   &:first-child {
     margin-left: 0rem;
@@ -26,6 +33,13 @@ const inlineButtonStyle = css`
   background-color: #efefef;
   font-size: .6rem;
   cursor: pointer;
+  
+  transition: background-color .1s ease;
+  -webkit-transition: background-color .1s ease;
+
+  &:hover {
+    background-color: #d7d7d7;
+  }
 `;
 
 const GreenButton = styled.button`
