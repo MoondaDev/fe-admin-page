@@ -5,6 +5,7 @@ import Sidebar from "../../layout/Sidebar";
 import Main, { RowComponentGroup, LeftComponentGroup, RightComponentGroup } from "../../layout/Main";
 
 import Title from "../../components/Title";
+import SearchBar from "../../components/SearchBar";
 import Table from "../../components/Table";
 
 class Page extends React.Component {
@@ -16,6 +17,14 @@ class Page extends React.Component {
         <Main>
           <RowComponentGroup>
             <Title>강좌 정보</Title>
+          </RowComponentGroup>
+
+          <RowComponentGroup>
+            <LeftComponentGroup>
+              <SearchBar>문화센터 검색</SearchBar>
+            </LeftComponentGroup>
+            <RightComponentGroup>
+            </RightComponentGroup>
           </RowComponentGroup>
 
           <RowComponentGroup>
