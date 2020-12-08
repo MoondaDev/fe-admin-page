@@ -13,6 +13,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 You can see the demo of built page in [here](https://moondadev.github.io/fe-admin-page/).
 
+## Deploy
+
+Demo page is being deployed on `origin/gh-pages` branch, using `git subtree`.
+
+```bash
+git subtree push --prefix build origin gh-pages
+```
+* [An article about this on Stackoverflow](https://stackoverflow.com/questions/36782467/set-subdirectory-as-website-root-on-github-pages)
+
+* If merge on `origin/gh-pages` has conflicts, resolve them easily by using `git checkout --theirs .` command.
+
 ---
 
 Copyright 2020, **[Moonda](https://www.moonda.kr/)**.
