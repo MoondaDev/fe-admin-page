@@ -1,9 +1,8 @@
-import React from "react";
 import styled from "styled-components";
 import { HEADER_HEIGHT } from "./Header";
 import { SIDEBAR_WIDTH } from "./Sidebar";
 
-const Layout = styled.main`
+const Main = styled.main`
   position: absolute;
   top: 0;
   left: 0;
@@ -14,18 +13,27 @@ const Layout = styled.main`
   padding-left: ${SIDEBAR_WIDTH};
 `;
 
-const Wrapper = styled.div`
+const RowComponentGroup = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
   padding: 0rem 1rem;
 `;
 
-class Main extends React.Component {
-  render() {
-    return (
-      <Layout>
-        <Wrapper>{this.props.children}</Wrapper>
-      </Layout>
-    );
-  }
-}
+const LeftComponentGroup = styled.div`
+  margin-right: auto;
+`;
 
-export default Main;
+const RightComponentGroup = styled.div`
+  margin-left: auto;
+`;
+
+export {
+  Main as default,
+
+  Main,
+  RowComponentGroup,
+  LeftComponentGroup,
+  RightComponentGroup,
+};
