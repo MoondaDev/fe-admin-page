@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const Heading = styled.h1`
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 1rem;
   font-size: 1.6rem;
 `;
