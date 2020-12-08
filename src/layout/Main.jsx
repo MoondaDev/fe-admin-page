@@ -13,9 +13,18 @@ const Main = styled.main`
   padding-left: ${SIDEBAR_WIDTH};
 `;
 
+const RowComponentGroup = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0rem 1rem;
+`;
+
 
 export {
   Main as default,
 
   Main,
+  RowComponentGroup,
 };
