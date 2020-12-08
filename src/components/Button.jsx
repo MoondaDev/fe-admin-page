@@ -1,11 +1,23 @@
 import styled, { css } from "styled-components";
 
 const defaultButtonStyle = css`
-  padding: .3rem 2rem;
+  min-width: 6rem;
+  margin-left: .3rem;
+  margin-right: .3rem;
+  padding: .3rem 1.6rem;
   border: 1px solid #d7d7d7;
   background-color: #efefef;
   font-size: .8rem;
+  text-align: center;
   cursor: pointer;
+
+  &:first-child {
+    margin-left: 0rem;
+  }
+
+  &:last-child {
+    margin-right: 0rem;
+  }
 `;
 
 const inlineButtonStyle = css`
