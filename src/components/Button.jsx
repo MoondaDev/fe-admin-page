@@ -20,7 +20,7 @@ const BlueButton = styled.button`
 
 const GrayButton = styled.button`
   ${defaultButtonStyle}
-  color: #727272;
+  color: #9E9E9E;
 `;
 
 export {
