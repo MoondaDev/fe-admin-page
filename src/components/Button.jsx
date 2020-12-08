@@ -4,6 +4,7 @@ const defaultButtonStyle = css`
   padding: .3rem 2rem;
   border: 1px solid #d7d7d7;
   background-color: #efefef;
+  font-size: .8rem;
   cursor: pointer;
 `;
 
