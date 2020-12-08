@@ -21,10 +21,19 @@ const RowComponentGroup = styled.div`
   padding: 0rem 1rem;
 `;
 
+const LeftComponentGroup = styled.div`
+  margin-right: auto;
+`;
+
+const RightComponentGroup = styled.div`
+  margin-left: auto;
+`;
 
 export {
   Main as default,
 
   Main,
   RowComponentGroup,
+  LeftComponentGroup,
+  RightComponentGroup,
 };
