@@ -1,6 +1,6 @@
 import React from "react";
 import Title from "../components/Title";
-import Main from "../layout/Main";
+import Main, { RowComponentGroup } from "../layout/Main";
 import Header from "../layout/Header";
 import Sidebar from "../layout/Sidebar";
 
@@ -11,7 +11,9 @@ class Empty extends React.Component {
         <Header></Header>
         <Sidebar></Sidebar>
         <Main>
-          <Title>404 Page not found</Title>
+          <RowComponentGroup>
+            <Title>404 Page not found</Title>
+          </RowComponentGroup>
         </Main>
       </>
     );
