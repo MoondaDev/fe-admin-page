@@ -1,13 +1,15 @@
 import React from "react";
 
-import Header from "../../layout/Header";
-import Sidebar from "../../layout/Sidebar";
-import Main, { RowComponentGroup, LeftComponentGroup, RightComponentGroup } from "../../layout/Main";
+import Header from "../../../layout/Header";
+import Sidebar from "../../../layout/Sidebar";
+import Main, { RowComponentGroup, LeftComponentGroup, RightComponentGroup } from "../../../layout/Main";
 
-import Title from "../../components/Title";
-import SearchBar from "../../components/SearchBar";
-import Table from "../../components/Table";
-import { GreenButton } from "../../components/Button";
+import Title from "../../../components/Title";
+import SearchBar from "../../../components/SearchBar";
+import Table from "../../../components/Table";
+import { GreenButton } from "../../../components/Button";
+
+const PATHNAME = '/admin/lecture/list';
 
 class Page extends React.Component {
   render() {
@@ -63,4 +65,8 @@ class Page extends React.Component {
   }
 }
 
-export default Page;
+export {
+  Page as default,
+  Page,
+  PATHNAME,
+};
