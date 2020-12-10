@@ -1,14 +1,14 @@
 import React from "react";
 
-import Header from "../../layout/Header";
-import Sidebar from "../../layout/Sidebar";
-import Main, { RowComponentGroup, LeftComponentGroup, RightComponentGroup } from "../../layout/Main";
+import Header from "../../../layout/Header";
+import Sidebar from "../../../layout/Sidebar";
+import Main, { RowComponentGroup, LeftComponentGroup, RightComponentGroup } from "../../../layout/Main";
 
-import Title from "../../components/Title";
-import SearchBar from "../../components/SearchBar";
-import BoxForm, { BoxFormRow } from "../../components/BoxForm";
-import { LargeTable } from "../../components/Table";
-import { GrayButton, BlueButton, GreenButton } from "../../components/Button";
+import Title from "../../../components/Title";
+import SearchBar from "../../../components/SearchBar";
+import BoxForm, { BoxFormRow } from "../../../components/BoxForm";
+import { LargeTable } from "../../../components/Table";
+import { GrayButton, BlueButton, GreenButton } from "../../../components/Button";
 
 const PATHNAME = '/admin/lecture/new';
 

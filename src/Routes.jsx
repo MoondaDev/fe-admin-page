@@ -15,11 +15,11 @@ import {
 import {
   Page as LectureListPage,
   PATHNAME as LectureListPathname,
-} from "./pages/admin/LectureList";
+} from "./pages/admin/lecture/list";
 import {
   Page as LectureNewPage,
   PATHNAME as LectureNewPathname,
-} from "./pages/admin/LectureNew";
+} from "./pages/admin/lecture/new";
 
 const BASENAME = '/fe-admin-page';
 
