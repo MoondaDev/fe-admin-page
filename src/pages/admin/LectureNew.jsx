@@ -10,6 +10,8 @@ import BoxForm, { BoxFormRow } from "../../components/BoxForm";
 import { LargeTable } from "../../components/Table";
 import { GrayButton, BlueButton, GreenButton } from "../../components/Button";
 
+const PATHNAME = '/admin/lecture/new';
+
 class Page extends React.Component {
   render() {
     return (
@@ -113,4 +115,8 @@ class Page extends React.Component {
   }
 }
 
-export default Page;
+export {
+  Page as default,
+  Page,
+  PATHNAME,
+};

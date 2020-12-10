@@ -81,7 +81,9 @@ const LoginButton = styled.button`
   }
 `;
 
-class LoginPage extends React.Component {
+const PATHNAME = '/login';
+
+class Page extends React.Component {
   constructor(props) {
     super(props);
     this.state = {value: ''};
@@ -131,4 +133,8 @@ class LoginPage extends React.Component {
   }
 }
 
-export default LoginPage;
+export {
+  Page as default,
+  Page,
+  PATHNAME,
+};

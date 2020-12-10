@@ -9,6 +9,8 @@ import SearchBar from "../../components/SearchBar";
 import Table from "../../components/Table";
 import { GreenButton } from "../../components/Button";
 
+const PATHNAME = '/admin/lecture/list';
+
 class Page extends React.Component {
   render() {
     return (
@@ -63,4 +65,8 @@ class Page extends React.Component {
   }
 }
 
-export default Page;
+export {
+  Page as default,
+  Page,
+  PATHNAME,
+};
