@@ -7,7 +7,13 @@ import {
 
 import Header from "../../../layout/Header";
 import Sidebar from "../../../layout/Sidebar";
-import Main, { RowComponentGroup, LeftComponentGroup, RightComponentGroup } from "../../../layout/Main";
+import Main, {
+  Modal,
+  ModalTitle,
+  RowComponentGroup,
+  LeftComponentGroup,
+  RightComponentGroup
+} from "../../../layout/Main";
 
 import Title from "../../../components/Title";
 import SearchBar from "../../../components/SearchBar";
@@ -27,7 +33,49 @@ class Page extends React.Component {
         <Switch>
           <Route path={MODAL_PATHNAME}>
             <Modal>
+              <ModalTitle>
+                <span>강좌 수동 입력</span>
+                <Link to={PATHNAME}>
+                  <button>
+                    <i class="fas fa-times"></i>
+                  </button>
+                </Link>
+              </ModalTitle>
 
+              <LargeTable>
+                <tbody>
+                  <tr>
+                    <td>강좌명</td>
+                    <td colSpan={6}>
+                      <input type="text"/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td rowSpan={9}>대상</td>
+                    <td>
+                      <input type="checkbox" />
+                      <label>성인</label>
+                    </td>
+                    <td>
+                      <input type="checkbox" />
+                      <label>여성전용</label>
+                    </td>
+                    <td rowSpan={9}>카테고리</td>
+                    <td>
+                      <input type="checkbox" />
+                      <label>요리</label>
+                    </td>
+                    <td>
+                      <input type="checkbox" />
+                      <label>공예</label>
+                    </td>
+                    <td>
+                      <input type="checkbox" />
+                      <label>미술</label>
+                    </td>
+                  </tr>
+                </tbody>
+              </LargeTable>
              </Modal>
           </Route>
 
