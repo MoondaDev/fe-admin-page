@@ -1,5 +1,5 @@
 import React from "react";
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 import { HEADER_HEIGHT } from "./Header";
 import { SIDEBAR_WIDTH } from "./Sidebar";

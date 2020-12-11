@@ -125,21 +125,21 @@ class Sidebar extends React.Component {
       <Layout>
         <nav>
           <NavList>
-            {ITEMS.map(({ title, icon, path, children }) => <>
-              {/* Major Item */}
-              <li>
-                <Item to={path}>
-                  <ItemIcon className={icon} />
-                  <ItemTitle>{title}</ItemTitle>
-                </Item>
-              </li>
-              {/* Minor Items */}
-              {children && children.map(({ subtitle, subpath }) => <li>
-                <Item to={path+subpath}>
-                  <ItemSubtitle>{'- '+subtitle}</ItemSubtitle>
-                </Item>
-              </li>)}
-            </>)}
+            {/* Major Item */}
+            {ITEMS.map(({ title, icon, path, children }) => <li key={path}>
+              <Item to={path}>
+                <ItemIcon className={icon} />
+                <ItemTitle>{title}</ItemTitle>
+              </Item>
+              {!!children ? <NavList>
+                {/* Minor Items */}
+                {children.map(({ subtitle, subpath }) => <li key={path+subpath}>
+                  <Item to={path+subpath}>
+                    <ItemSubtitle>{'- '+subtitle}</ItemSubtitle>
+                  </Item>
+                </li>)}
+              </NavList> : null}
+            </li>)}
           </NavList>
         </nav>
       </Layout>
