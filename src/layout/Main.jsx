@@ -37,6 +37,36 @@ const ModalOverlay = styled.div`
   border: 1px solid #efefef;
 `;
 
+const ModalTitle = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 3.6rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  background-color: rgb(51, 63, 80);
+  color: white;
+
+  & * {
+    color: inherit;
+    background-color: transparent;
+  }
+  & button {
+    display: inline-block;
+    width: 1.6rem;
+    height: 1.6rem;
+    padding: .2rem;
+    border: none;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    cursor: pointer;
+  }
+`;
+
 const RowComponentGroup = styled.div`
   display: flex;
   justify-content: space-between;
@@ -93,4 +123,5 @@ export {
   RightComponentGroup,
 
   Modal,
+  ModalTitle,
 };
