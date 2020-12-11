@@ -26,7 +26,10 @@ const RowComponentGroup = styled.div`
   justify-content: space-between;
   width: 100%;
   margin-top: 1rem;
-  padding: 0rem 1rem;
+
+  &:first-child {
+    margin-top: 0;
+  }
 `;
 
 const LeftComponentGroup = styled.div`
