@@ -1,5 +1,6 @@
-import styled from "styled-components";
 import React from "react";
+import styled, { css } from "styled-components";
+
 import { HEADER_HEIGHT } from "./Header";
 import { SIDEBAR_WIDTH } from "./Sidebar";
 
@@ -19,6 +20,21 @@ const Container = styled.div`
   height: 100%;
   padding: 1rem;
   background-color: white;
+`;
+
+const ModalShadow = styled.div`
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: rgba(0,0,0,.75);
+`;
+
+const ModalOverlay = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 3.6rem;
+  border: 1px solid #efefef;
 `;
 
 const RowComponentGroup = styled.div`
@@ -52,6 +68,22 @@ class Main extends React.Component {
   }
 }
 
+class Modal extends React.Component {
+  render() {
+    return (
+      <Wrapper>
+        <ModalShadow>
+          <ModalOverlay>
+            <Container>
+              {this.props.children}
+            </Container>
+          </ModalOverlay>
+        </ModalShadow>
+      </Wrapper>
+    );
+  }
+}
+
 export {
   Main as default,
 
@@ -59,4 +91,6 @@ export {
   RowComponentGroup,
   LeftComponentGroup,
   RightComponentGroup,
+
+  Modal,
 };
