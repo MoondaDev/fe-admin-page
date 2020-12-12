@@ -21,6 +21,11 @@ import {
   PATHNAME as LectureNewPathname,
 } from "./pages/admin/lecture/new";
 
+import {
+  Page as ImagesPage,
+  PATHNAME as ImagesPathname,
+} from "./pages/admin/images";
+
 const BASENAME = '/fe-admin-page';
 
 class Routes extends React.Component {
@@ -34,7 +39,8 @@ class Routes extends React.Component {
           <Route path="/admin/center/new" component={NoPage} />
           <Route path={LectureListPathname} component={LectureListPage} />
           <Route path={LectureNewPathname} component={LectureNewPage} />
-          <Route path="/admin/images" component={NoPage} />
+          
+          <Route path={ImagesPathname} component={ImagesPage} />
 
           {/* Redirects */}
           <Redirect from="/admin/center*" to="/admin/center/list" />
