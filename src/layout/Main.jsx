@@ -20,6 +20,7 @@ const Container = styled.div`
   height: 100%;
   padding: 1rem;
   background-color: white;
+  overflow: scroll;
 `;
 
 const ModalShadow = styled.div`
