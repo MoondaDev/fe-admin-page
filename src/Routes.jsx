@@ -12,6 +12,12 @@ import {
   Page as LoginPage,
   PATHNAME as LoginPathname,
 } from "./pages/login";
+
+import {
+  Page as CenterNewPage,
+  PATHNAME as CenterNewPathname,
+} from "./pages/admin/center/new";
+
 import {
   Page as LectureListPage,
   PATHNAME as LectureListPathname,
@@ -36,7 +42,9 @@ class Routes extends React.Component {
           {/* Pages */}
           <Route path={LoginPathname} component={LoginPage} />
           <Route path="/admin/center/list" component={NoPage} />
-          <Route path="/admin/center/new" component={NoPage} />
+
+          <Route path={CenterNewPathname} component={CenterNewPage} />
+
           <Route path={LectureListPathname} component={LectureListPage} />
           <Route path={LectureNewPathname} component={LectureNewPage} />
           
