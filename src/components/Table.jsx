@@ -1,4 +1,3 @@
-import React from "react";
 import styled, { css } from "styled-components";
 
 const defaultStyle = css`
@@ -9,10 +8,15 @@ const defaultStyle = css`
     border: 2px solid #424242;
   }
 
-  & input {
+  & input[type="checkbox"] {
     width: 1.2em;
     height: 1.2em;
     cursor: pointer;
+  }
+
+  & input[type="text"] {
+    width: 100%;
+    height: 1.4em;
   }
 
   & > thead {

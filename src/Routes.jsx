@@ -5,10 +5,36 @@ import {
   Redirect,
   Switch
 } from "react-router-dom";
-import LoginPage from "./pages/login";
-import LectureListPage from "./pages/admin/LectureList";
-import LectureNewPage from "./pages/admin/LectureNew";
+
+// Pages
 import NoPage from "./pages/404";
+import {
+  Page as LoginPage,
+  PATHNAME as LoginPathname,
+} from "./pages/login";
+
+import {
+  Page as CenterListPage,
+  PATHNAME as CenterListPathname,
+} from "./pages/admin/center/list";
+import {
+  Page as CenterNewPage,
+  PATHNAME as CenterNewPathname,
+} from "./pages/admin/center/new";
+
+import {
+  Page as LectureListPage,
+  PATHNAME as LectureListPathname,
+} from "./pages/admin/lecture/list";
+import {
+  Page as LectureNewPage,
+  PATHNAME as LectureNewPathname,
+} from "./pages/admin/lecture/new";
+
+import {
+  Page as ImagesPage,
+  PATHNAME as ImagesPathname,
+} from "./pages/admin/images";
 
 const BASENAME = '/fe-admin-page';
 
@@ -18,12 +44,15 @@ class Routes extends React.Component {
       <BrowserRouter basename={BASENAME}>
         <Switch>
           {/* Pages */}
-          <Route path="/login" component={LoginPage} />
-          <Route path="/admin/center/list" component={NoPage} />
-          <Route path="/admin/center/new" component={NoPage} />
-          <Route path="/admin/lecture/list" component={LectureListPage} />
-          <Route path="/admin/lecture/new" component={LectureNewPage} />
-          <Route path="/admin/images" component={NoPage} />
+          <Route path={LoginPathname} component={LoginPage} />
+
+          <Route path={CenterListPathname} component={CenterListPage} />
+          <Route path={CenterNewPathname} component={CenterNewPage} />
+
+          <Route path={LectureListPathname} component={LectureListPage} />
+          <Route path={LectureNewPathname} component={LectureNewPage} />
+          
+          <Route path={ImagesPathname} component={ImagesPage} />
 
           {/* Redirects */}
           <Redirect from="/admin/center*" to="/admin/center/list" />
