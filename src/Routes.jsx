@@ -12,6 +12,16 @@ import {
   Page as LoginPage,
   PATHNAME as LoginPathname,
 } from "./pages/login";
+
+import {
+  Page as CenterListPage,
+  PATHNAME as CenterListPathname,
+} from "./pages/admin/center/list";
+import {
+  Page as CenterNewPage,
+  PATHNAME as CenterNewPathname,
+} from "./pages/admin/center/new";
+
 import {
   Page as LectureListPage,
   PATHNAME as LectureListPathname,
@@ -20,6 +30,11 @@ import {
   Page as LectureNewPage,
   PATHNAME as LectureNewPathname,
 } from "./pages/admin/lecture/new";
+
+import {
+  Page as ImagesPage,
+  PATHNAME as ImagesPathname,
+} from "./pages/admin/images";
 
 const BASENAME = '/fe-admin-page';
 
@@ -30,11 +45,14 @@ class Routes extends React.Component {
         <Switch>
           {/* Pages */}
           <Route path={LoginPathname} component={LoginPage} />
-          <Route path="/admin/center/list" component={NoPage} />
-          <Route path="/admin/center/new" component={NoPage} />
+
+          <Route path={CenterListPathname} component={CenterListPage} />
+          <Route path={CenterNewPathname} component={CenterNewPage} />
+
           <Route path={LectureListPathname} component={LectureListPage} />
           <Route path={LectureNewPathname} component={LectureNewPage} />
-          <Route path="/admin/images" component={NoPage} />
+          
+          <Route path={ImagesPathname} component={ImagesPage} />
 
           {/* Redirects */}
           <Redirect from="/admin/center*" to="/admin/center/list" />
